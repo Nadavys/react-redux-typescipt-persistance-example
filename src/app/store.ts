@@ -27,6 +27,6 @@ export type AppThunk<ReturnType = void> = ThunkAction<
 
 store.subscribe(throttle(() => {
   saveState({
-    todos: store.getState().todos
+    timer: store.getState().timer
   });
 }, 1000));
